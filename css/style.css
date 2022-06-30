@@ -2,6 +2,10 @@
 Code CSS par Nico J
 */
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Raleway';
     box-sizing: border-box;
@@ -234,6 +238,7 @@ form button:hover {
     border-radius: 15px;
     box-shadow: 4px 4px 6px rgb(239, 235, 235);
     border: 4px solid white;
+    transition: 0.5s ease-in-out;
 }
 
 .forme_cartes:hover {
@@ -339,12 +344,12 @@ form button:hover {
     margin: 0 30px 0 30px;
  }
  
-.bloc_activités {
+.bloc_activites {
     padding: 2% 0 2% 0;
 }
 
 /**Dispo générale ***/
-.bloc_cartes_activités {
+.bloc_cartes_activites {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -353,28 +358,29 @@ form button:hover {
     justify-content: space-between;
 }
 
-.bord_cartes_activités {
+.bord_cartes_activites {
     height: auto;
     box-shadow: 4px 4px 6px rgb(239, 235, 235);
     border-radius: 15px;
+    transition: 0.5s ease-in-out;
 }
 
-.bord_cartes_activités:hover {
+.bord_cartes_activites:hover {
     box-shadow: 4px 4px 6px #0065FC;
 }
 
-.photos_activités {
+.photos_activites {
     border-radius: 15px 15px 0 0px;
     width: 100%;
     object-fit: cover;
 }
 
-.titres_activités {
+.titres_activites {
     padding: 5% 0 5% 5%;
 }
 
 /****Grandes activités***/ 
-.grandes_activités {
+.grandes_activites {
     width: 23%;
     height: 430px;  
 }
@@ -513,7 +519,7 @@ ul {
         height: 350px
     }
 
-    .grandes_activités {
+    .grandes_activites {
         height: 400px;
     }
     
@@ -692,24 +698,24 @@ div .texte_formulaire {
 }
 
 /****Bloc activité****/
-.titres_activités {
+.titres_activites {
     margin-left: 0px;
     font-size: 16px;
 }
 
 
-.bloc_cartes_activités {
+.bloc_cartes_activites {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;    
 }
 
-.width_activité {
+.width_activite {
     width: 100%;
 }
 
-.petites_activités, .grandes_activités {
+.petites_activites, .grandes_activites {
     height: auto; 
     margin-bottom: 20px;
 }
